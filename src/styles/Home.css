@@ -1,0 +1,87 @@
+.home {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  
+  }
+.socialMedia{
+  margin-left: 12%;
+  color: white;
+  
+}
+.quote{
+  margin-left: 71%;
+  margin-bottom: 2%;
+}
+
+.headerContainer {
+  width: 100%;
+  padding-top: 18%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: inherit; 
+  
+}
+
+.headerContainer h1 {
+  justify-content: center;
+  align-items: center;
+  margin-left: 12%;
+  font-size: 90px;
+  height: 60px;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+
+}
+.headerContainer h2{
+  font-size: 20px;
+  margin-left: 12%;
+  color: rgb(255, 255, 255);
+  font-weight: 50;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(255, 71, 111);
+  
+  }
+
+
+
+
+
+@media only screen and (max-width: 650px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .headerContainer {
+    margin-left: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+
+  .headerContainer h1 {
+    font-size: 40px;
+    height: 30px;
+    color: white;
+  }
+
+  .headerContainer p {
+    font-size: 30px;
+    color: white;
+  }
+
+ 
+}

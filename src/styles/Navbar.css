@@ -1,0 +1,120 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: none;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .2)
+  
+  }
+
+.navbar .leftSide {
+  flex: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+  color: aliceblue;
+  
+}
+.navbar .leftSide .logoName{
+  padding-left: 5%;
+  font-family: cursive;
+  font-size: x-large;
+ 
+}
+.navbar .leftSide img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar .rightSide {
+  flex: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+ 
+}
+.navbar .rightSide :hover{
+  color: rgb(255, 71, 111);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .rightSide svg {
+  font-size: 40px;
+}
+
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+@media only screen and (max-width: 900px) {
+  .navbar .rightSide a {
+    width: 70px;
+  }
+  .navbar .leftSide {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .rightSide a {
+    display: none;
+  }
+
+  .navbar .rightSide {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .navbar .rightSide button {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .rightSide button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+}
